@@ -21,12 +21,19 @@ Drop both into your Claude environment and it behaves like a senior recon analys
 
 ---
 
+## ChatGPT compatibility
+
+A ChatGPT execution adapter is included at `skills/chatgpt-osint/SKILL.md`. It reuses the repository's OSINT methodology while mapping execution to ChatGPT's available web, GitHub, files, and connected tools. It intentionally does not claim that ChatGPT can execute every local CLI recipe in the original arsenal.
+
+See [`docs/chatgpt.md`](docs/chatgpt.md) for installation and usage notes.
+
 ## Structure
 
 ```
 claude-osint/
 ├── skills/
-│   ├── osint-methodology/SKILL.md     # how to think  (455 lines)
+│   ├── osint-methodology/SKILL.md     # how to think
+│   ├── chatgpt-osint/SKILL.md          # ChatGPT execution adapter
 │   └── offensive-osint/
 │       ├── SKILL.md                   # what to reach for (4,168 lines)
 │       ├── scripts/secret_scan.py     # stdlib-only secret scanner
